@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: f5dbf4b92e690f345b4495b0abc14fca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8377050744960859778
+    second: G-City-Characters_0
+  - first:
+      213: -1710467614804454441
+    second: G-City-Characters_1
+  - first:
+      213: -8814512342539866279
+    second: G-City-Characters_2
+  - first:
+      213: 1074409291659520592
+    second: G-City-Characters_3
+  - first:
+      213: 4382116405927776176
+    second: G-City-Characters_4
+  - first:
+      213: -3981313283415790828
+    second: G-City-Characters_5
+  - first:
+      213: -1058297786390942675
+    second: G-City-Characters_6
+  - first:
+      213: -7518126645772109662
+    second: G-City-Characters_7
+  - first:
+      213: 8039439318772111105
+    second: G-City-Characters_8
+  - first:
+      213: -4867453120315160065
+    second: G-City-Characters_9
+  - first:
+      213: 7677251982450604486
+    second: G-City-Characters_10
+  - first:
+      213: -9054873823892555340
+    second: G-City-Characters_11
+  - first:
+      213: 6634453824474081339
+    second: G-City-Characters_12
+  - first:
+      213: -5737000900317795036
+    second: G-City-Characters_13
+  - first:
+      213: -5654288807480191329
+    second: G-City-Characters_14
+  - first:
+      213: -2398446300807361593
+    second: G-City-Characters_15
+  - first:
+      213: 362125714392711527
+    second: G-City-Characters_16
+  - first:
+      213: 423400893303430186
+    second: G-City-Characters_17
+  - first:
+      213: 1430588985152418108
+    second: G-City-Characters_18
+  - first:
+      213: 9101226012917419625
+    second: G-City-Characters_19
+  - first:
+      213: 4079757881215228503
+    second: G-City-Characters_20
+  - first:
+      213: -5843414530201009262
+    second: G-City-Characters_21
+  - first:
+      213: -3352436316390185099
+    second: G-City-Characters_22
+  - first:
+      213: -4852420033568491641
+    second: G-City-Characters_23
+  - first:
+      213: -9054836772139483025
+    second: G-City-Characters_24
+  - first:
+      213: -2127994577766355508
+    second: G-City-Characters_25
+  - first:
+      213: 3970736735397634418
+    second: G-City-Characters_26
+  - first:
+      213: -5961870557533285631
+    second: G-City-Characters_27
+  - first:
+      213: -6139684656271612019
+    second: G-City-Characters_28
+  - first:
+      213: -922974792193654184
+    second: G-City-Characters_29
+  - first:
+      213: -2166617848113673666
+    second: G-City-Characters_30
+  - first:
+      213: -5585114407381153395
+    second: G-City-Characters_31
+  - first:
+      213: -3828459265187662409
+    second: G-City-Characters_32
+  - first:
+      213: -7784480679179798111
+    second: G-City-Characters_33
+  - first:
+      213: 7747145398947451108
+    second: G-City-Characters_34
+  - first:
+      213: 7480224967883308467
+    second: G-City-Characters_35
+  - first:
+      213: -8465193226979578987
+    second: G-City-Characters_36
+  - first:
+      213: 2881478492462802176
+    second: G-City-Characters_37
+  - first:
+      213: 432505603585349446
+    second: G-City-Characters_38
+  - first:
+      213: -308787132504665856
+    second: G-City-Characters_39
+  - first:
+      213: -4739699024214068208
+    second: G-City-Characters_40
+  - first:
+      213: -5107160349419381391
+    second: G-City-Characters_41
+  - first:
+      213: 7082593742968064449
+    second: G-City-Characters_42
+  - first:
+      213: -9067334859118602551
+    second: G-City-Characters_43
+  - first:
+      213: 2170360438181905746
+    second: G-City-Characters_44
+  - first:
+      213: -10250305053119859
+    second: G-City-Characters_45
+  - first:
+      213: -8830717153405022714
+    second: G-City-Characters_46
+  - first:
+      213: -7378040586676817875
+    second: G-City-Characters_47
+  - first:
+      213: 4723234734789816669
+    second: G-City-Characters_48
+  - first:
+      213: 1899595743738801632
+    second: G-City-Characters_49
+  - first:
+      213: -3822131229228063538
+    second: G-City-Characters_50
+  - first:
+      213: -5621058445254142987
+    second: G-City-Characters_51
+  - first:
+      213: 2936731584619782834
+    second: G-City-Characters_52
+  - first:
+      213: -1167443622870976248
+    second: G-City-Characters_53
+  - first:
+      213: 5534665576616606296
+    second: G-City-Characters_54
+  - first:
+      213: -5051113147320221637
+    second: G-City-Characters_55
+  - first:
+      213: 3325317706377783725
+    second: G-City-Characters_56
+  - first:
+      213: -7869742756403381632
+    second: G-City-Characters_57
+  - first:
+      213: -1872233089273362136
+    second: G-City-Characters_58
+  - first:
+      213: 7966539458052941202
+    second: G-City-Characters_59
+  - first:
+      213: -1314608310952222459
+    second: G-City-Characters_60
+  - first:
+      213: -2634653522453254943
+    second: G-City-Characters_61
+  - first:
+      213: -5028676350708991792
+    second: G-City-Characters_62
+  - first:
+      213: 7993228959138610469
+    second: G-City-Characters_63
+  - first:
+      213: -2899059842660952449
+    second: G-City-Characters_64
+  - first:
+      213: -1118379576283664519
+    second: G-City-Characters_65
+  - first:
+      213: -1315454477373707005
+    second: G-City-Characters_66
+  - first:
+      213: 8457308446888839567
+    second: G-City-Characters_67
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: G-City-Characters_38
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 145
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64712111e81900600800000000000000
+      internalID: 432505603585349446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_39
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 145
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00119df2db7f6bbf0800000000000000
+      internalID: -308787132504665856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_40
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 145
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014747779d4393eb0800000000000000
+      internalID: -4739699024214068208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_44
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 97
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255c468c15bae1e10800000000000000
+      internalID: 2170360438181905746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_45
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 97
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a2870e6659bdff0800000000000000
+      internalID: -10250305053119859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_46
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 97
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e485f398df27580800000000000000
+      internalID: -8830717153405022714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_53
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 49
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809fa7bd5386ccfe0800000000000000
+      internalID: -1167443622870976248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_54
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 49
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ab0dc94051fcc40800000000000000
+      internalID: 5534665576616606296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_55
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 49
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b304cadba57d6e9b0800000000000000
+      internalID: -5051113147320221637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_62
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d83599808d863ab0800000000000000
+      internalID: -5028676350708991792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_63
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d72dd6367adee60800000000000000
+      internalID: 7993228959138610469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G-City-Characters_64
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f761897de6874c7d0800000000000000
+      internalID: -2899059842660952449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
