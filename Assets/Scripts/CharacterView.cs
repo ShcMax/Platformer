@@ -6,15 +6,6 @@ public class CharacterView : MonoBehaviour
 {
 
     public SpriteRenderer _spriteRenderer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public SpriteRenderer SpriteRenderer => _spriteRenderer;
+   
 }

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7a61bd0d647c94bae37f3e5d40eeb8, type: 3}
+  m_Name: SpriteAnimationsConfig
+  m_EditorClassIdentifier: 
+  _sequences:
+  - Track: 0
+    Sprites:
+    - {fileID: -1167443622870976248, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
+    - {fileID: 5534665576616606296, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
+    - {fileID: -5051113147320221637, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
