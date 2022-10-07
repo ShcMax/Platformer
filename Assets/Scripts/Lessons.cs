@@ -9,10 +9,12 @@ public class Lessons : MonoBehaviour
 
     [SerializeField] private SpriteAnimationsConfig _spriteAnimationsConfig;
     [SerializeField] private CharacterView _characterView;
+    [SerializeField] private CannonView _cannonView;
 
     private ParalaxManager _paralaxManager;
     private SpriteAnimator _spriteAnimator;
-    private MainHeroWalker _mainHeroWalker;    
+    private MainHeroWalker _mainHeroWalker;
+    private AimingMuzzle _aimingMuzzle;
    
     void Start()
     {
@@ -20,6 +22,7 @@ public class Lessons : MonoBehaviour
         _spriteAnimator = new SpriteAnimator(_spriteAnimationsConfig);
         _spriteAnimator.StartAnimation(_characterView.SpriteRenderer, Track.walk, true, 10);
         _mainHeroWalker = new MainHeroWalker(_characterView, _spriteAnimator);
+        _aimingMuzzle = new AimingMuzzle(_cannonView.transform, _characterView.transform);
     }
    
     void Update()
@@ -27,5 +30,6 @@ public class Lessons : MonoBehaviour
         _paralaxManager.Update();
         _spriteAnimator.Update();
         _mainHeroWalker.Update();
+        _aimingMuzzle.Update();
     }
 }
