@@ -9,7 +9,7 @@ public class CharacterView : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField]
-    private float _walkSped = 1;
+    private float _walkSpeed = 1;
 
     [SerializeField]
     private float _animationSpeed = 3;
@@ -24,13 +24,13 @@ public class CharacterView : MonoBehaviour
     private float _flyTresh = 0.3f;
 
     [SerializeField]
-    private float _grounfLevel = 0.1f;
+    private float _grounfLevel = 0f;
 
     [SerializeField]
     private float _acceleration = -10f;
 
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
-    public float WalkSped => _walkSped;
+    public float WalkSpeed => _walkSpeed;
     public float AnimationSpeed => _animationSpeed;
     public float JumpStartSpeed => _jumpStartSpeed;
     public float MovingTresh => _movingTresh; 

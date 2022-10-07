@@ -74,7 +74,7 @@ public class MainHeroWalker
 
     private void GoSideWay(float xAxisInput)
     {
-        _characterView.transform.position += Vector3.right * (Time.deltaTime * _characterView.WalkSped * (xAxisInput < 0 ? -1 : 1));
+        _characterView.transform.position += Vector3.right * (Time.deltaTime * _characterView.WalkSpeed * (xAxisInput < 0 ? -1 : 1));
         _characterView.SpriteRenderer.flipX = xAxisInput < 0;
     }
 }

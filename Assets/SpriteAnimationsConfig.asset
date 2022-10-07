@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: SpriteAnimationsConfig
   m_EditorClassIdentifier: 
   _sequences:
-  - Track: 0
+  - Track: 1
     Sprites:
     - {fileID: -1167443622870976248, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
     - {fileID: 5534665576616606296, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
     - {fileID: -5051113147320221637, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
+  - Track: 0
+    Sprites:
+    - {fileID: -308787132504665856, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
+  - Track: 2
+    Sprites:
+    - {fileID: 432505603585349446, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
+    - {fileID: -4739699024214068208, guid: f5dbf4b92e690f345b4495b0abc14fca, type: 3}
