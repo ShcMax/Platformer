@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum Track
 {
+   idle,
    walk,
-   run
+   jump
 }

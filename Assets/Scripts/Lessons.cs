@@ -12,20 +12,20 @@ public class Lessons : MonoBehaviour
 
     private ParalaxManager _paralaxManager;
     private SpriteAnimator _spriteAnimator;
-    
-    // Start is called before the first frame update
+    private MainHeroWalker _mainHeroWalker;    
+   
     void Start()
     {
         _paralaxManager = new ParalaxManager(_camera, _background.transform);
-
         _spriteAnimator = new SpriteAnimator(_spriteAnimationsConfig);
         _spriteAnimator.StartAnimation(_characterView.SpriteRenderer, Track.walk, true, 10);
+        _mainHeroWalker = new MainHeroWalker(_characterView, _spriteAnimator);
     }
-
-    // Update is called once per frame
+   
     void Update()
     {
         _paralaxManager.Update();
         _spriteAnimator.Update();
+        _mainHeroWalker.Update();
     }
 }
