@@ -14,10 +14,10 @@ public class AimingMuzzle
 
     public void Update()
     {
-        var dir = _aimTransform.position - _muzzleTransform.position;
+        var dir = _muzzleTransform.position - _aimTransform.position;
         var angle = Vector3.Angle(-Vector3.left, dir);
         var axis = Vector3.Cross(-Vector3.left, dir);
 
-        _muzzleTransform.rotation = Quaternion.AngleAxis(angle, axis);
+        _muzzleTransform.rotation = Quaternion.AngleAxis(angle, axis);        
     }
 }
