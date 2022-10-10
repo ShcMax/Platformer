@@ -22,6 +22,7 @@ public class CoinsManager : IDisposable
     {
         if (_coinViews.Contains(contactView))
             Object.Destroy(contactView.gameObject);
+        Debug.Log("Вы подобрали монету");
     }
 
     public void Dispose()

@@ -11,6 +11,7 @@ public class Lessons : MonoBehaviour
     [SerializeField] private CannonView _cannonView;
     [SerializeField] private List<BulletView> _bullets;
     [SerializeField] private List<CoinView> _coinViews;
+    [SerializeField] private List<SpikeView> _spikeViews;
 
     private ParalaxManager _paralaxManager;
     private SpriteAnimator _spriteAnimator;
@@ -19,6 +20,8 @@ public class Lessons : MonoBehaviour
     private BulletsEmitter _bulletsEmitter;
     private MainHeroPhysicsWalker _mainHeroPhysicsWalker;
     private CoinsManager _coinsManager;
+    private SpikesManager _spikesManager;
+    
 
     void Start()
     {
@@ -30,6 +33,7 @@ public class Lessons : MonoBehaviour
         _aimingMuzzle = new AimingMuzzle(_cannonView.transform, _characterView.transform);
         _bulletsEmitter = new BulletsEmitter(_bullets, _cannonView.MuzzleTransform);
         _coinsManager = new CoinsManager(_coinViews);
+        _spikesManager = new SpikesManager(_spikeViews);
     }
 
     void Update()
@@ -49,5 +53,6 @@ public class Lessons : MonoBehaviour
     private void OnDestroy()
     {
         _coinsManager.Dispose();
+        _spikesManager.Dispose();
     }
 }

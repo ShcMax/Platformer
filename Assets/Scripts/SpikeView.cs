@@ -1,17 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public class CoinView : MonoBehaviour
+public class SpikeView : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer _spriteRenderer;
-    public Action<CoinView> OnLevelObjectContact { get; set; }
-    public SpriteRenderer SpriteRenderer => _spriteRenderer;
+    public Action<SpikeView> OnLevelObjectContact { get; set; }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         var levelObject = collider.gameObject.GetComponent<CharacterView>();
-
         if (levelObject != null)
             OnLevelObjectContact?.Invoke(this);
     }
