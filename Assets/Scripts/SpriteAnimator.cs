@@ -40,7 +40,6 @@ public class SpriteAnimator : IDisposable
             });
         }
     }
-
         
     public void StopAnimation(SpriteRenderer sprite)
     {
