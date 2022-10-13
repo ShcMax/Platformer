@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Elevator
 {
-    private readonly ElevatorView _elevatorView;
+    private readonly ElevatorView _elevatorView;    
 
     public Elevator(ElevatorView elevatorView)
     {
@@ -13,16 +13,19 @@ public class Elevator
 
     public void FixedUpdate()
     {
-        var speed = _elevatorView.SliderJoint.motor;
-        speed.motorSpeed = _elevatorView.SpeedMotor;        
+        SliderJoint2D sliderJoint2D = _elevatorView.SliderJoint;
+        JointMotor2D jointMotor2D = sliderJoint2D.motor;       
+        
 
         if (_elevatorView.transform.position.y <= _elevatorView.PositionY1)
         {
-            speed.motorSpeed = -(_elevatorView.SpeedMotor);            
+            jointMotor2D.motorSpeed = -_elevatorView.SpeedMotor;
+            sliderJoint2D.motor = jointMotor2D;
         }
         if (_elevatorView.transform.position.y >= _elevatorView.PositionY2)
         {
-            speed.motorSpeed = _elevatorView.SpeedMotor;
+            jointMotor2D.motorSpeed = _elevatorView.SpeedMotor;
+            sliderJoint2D.motor = jointMotor2D;
         }        
     }
 }

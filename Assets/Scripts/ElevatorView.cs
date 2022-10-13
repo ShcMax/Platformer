@@ -8,7 +8,7 @@ public class ElevatorView: MonoBehaviour
     private SliderJoint2D _sliderJoint;
     
     private float _positionY1 = -1.5f;
-    private float _positionY2 = 1;
+    private float _positionY2 = 1.2f;
 
     private float _speedMotor = 0.5f; 
     

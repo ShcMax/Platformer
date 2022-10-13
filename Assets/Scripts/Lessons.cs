@@ -49,7 +49,7 @@ public class Lessons : MonoBehaviour
         _spriteAnimator.Update();
         //_mainHeroWalker.Update();
         _aimingMuzzle.Update();
-        _bulletsEmitter.Update();
+        _bulletsEmitter.Update();        
     }
 
     private void FixedUpdate()
