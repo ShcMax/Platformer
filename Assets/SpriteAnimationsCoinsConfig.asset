@@ -12,12 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7a61bd0d647c94bae37f3e5d40eeb8, type: 3}
   m_Name: SpriteAnimationsCoinsConfig
   m_EditorClassIdentifier: 
-  _sequences:
-  - Track: 0
-    Sprites:
-    - {fileID: 4733205030882692074, guid: b69375910f7492540907bc371928a34d, type: 3}
-    - {fileID: -317492494651419309, guid: b69375910f7492540907bc371928a34d, type: 3}
-    - {fileID: 8782010489072332090, guid: b69375910f7492540907bc371928a34d, type: 3}
-    - {fileID: 3435995952488913856, guid: b69375910f7492540907bc371928a34d, type: 3}
-    - {fileID: -3659758474578662360, guid: b69375910f7492540907bc371928a34d, type: 3}
-    - {fileID: 1086314007858676934, guid: b69375910f7492540907bc371928a34d, type: 3}
+  _sequences: []

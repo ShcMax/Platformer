@@ -10,11 +10,11 @@ public class ElevatorView: MonoBehaviour
     private float _positionY1 = -1.5f;
     private float _positionY2 = 1;
 
-    private float _speedMotor = 0.5f;    
-
-    public SliderJoint2D SliderJoint => _sliderJoint;
-
+    private float _speedMotor = 0.5f; 
+    
     public float PositionY1 => _positionY1;
     public float PositionY2 => _positionY2;
     public float SpeedMotor => _speedMotor;
+
+    public SliderJoint2D SliderJoint => _sliderJoint;
 }
