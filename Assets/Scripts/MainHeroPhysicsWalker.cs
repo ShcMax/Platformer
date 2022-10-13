@@ -27,6 +27,7 @@ public class MainHeroPhysicsWalker
         var isGoSideWay = Mathf.Abs(xAxisInput) > _characterView.MovingTresh;
         if (isGoSideWay)
             _characterView.SpriteRenderer.flipX = xAxisInput < 0;
+
         var newVelocityX = 0f;
         if(isGoSideWay && (xAxisInput > 0 || !_contactsPoller.HasLeftContacts) &&
             (xAxisInput < 0 || !_contactsPoller.HasRightContacts))

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterView : MonoBehaviour
-{
+{    
     [SerializeField]
     private SpriteRenderer _spriteRenderer;
     [SerializeField]

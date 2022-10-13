@@ -14,6 +14,8 @@ public class Lessons : MonoBehaviour
     [SerializeField] private List<SpikeView> _spikeViews;
     [SerializeField] private List<FinishView> _finishViews;
 
+    [SerializeField] private ElevatorView _elevatorView;
+
     private ParalaxManager _paralaxManager;
     private SpriteAnimator _spriteAnimator;
     //private MainHeroWalker _mainHeroWalker;
@@ -23,6 +25,7 @@ public class Lessons : MonoBehaviour
     private CoinsManager _coinsManager;
     private SpikesManager _spikesManager;
     private FinishManager _finishManager;
+    private Elevator _elevator;
     
 
     void Start()
@@ -37,6 +40,7 @@ public class Lessons : MonoBehaviour
         _coinsManager = new CoinsManager(_coinViews);
         _spikesManager = new SpikesManager(_spikeViews);
         _finishManager = new FinishManager(_finishViews);
+        _elevator = new Elevator(_elevatorView);
     }
 
     void Update()
@@ -51,6 +55,7 @@ public class Lessons : MonoBehaviour
     private void FixedUpdate()
     {
         _mainHeroPhysicsWalker.FixedUpdate();
+        _elevator.FixedUpdate();
     }
 
     private void OnDestroy()
