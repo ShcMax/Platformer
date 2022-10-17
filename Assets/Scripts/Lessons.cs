@@ -1,4 +1,4 @@
-using System.Collections;
+using Pathfinding;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,9 +30,16 @@ public class Lessons : MonoBehaviour
     private SpikesManager _spikesManager;
     private FinishManager _finishManager;
     private Elevator _elevator;
+    //private SimplePatrolAI _simplePatrolAI;
+    private ProtectorAI _protectorAI;
+    private ProtectedZone _protectedZone;
 
-    private SimplePatrolAI _simplePatrolAI;
-    
+    [Header("Protector AI")]
+    [SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
+    [SerializeField] private AIPatrolPath _protectorAIPatrolPath;
+    [SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
+    [SerializeField] private Transform[] _protectorWaypoints;
+
 
     void Start()
     {
@@ -47,8 +54,13 @@ public class Lessons : MonoBehaviour
         _spikesManager = new SpikesManager(_spikeViews);
         _finishManager = new FinishManager(_finishViews);
         _elevator = new Elevator(_elevatorView, _sliderJoint);
+        //_simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
 
-        _simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
+        _protectorAI = new ProtectorAI(_characterView, new PatrolAIModel(_protectorWaypoints), _protectorAIDestinationSetter, _protectorAIPatrolPath);
+        _protectorAI.Init();
+
+        _protectedZone = new ProtectedZone(_protectedZoneTrigger, new List<IProtector> { _protectorAI });
+        _protectedZone.Init();
     }
 
     void Update()
@@ -64,7 +76,7 @@ public class Lessons : MonoBehaviour
     {
         _mainHeroPhysicsWalker.FixedUpdate();
         _elevator.FixedUpdate();
-        _simplePatrolAI.FixedUpdate();
+        //_simplePatrolAI.FixedUpdate();
     }
 
     private void OnDestroy()
@@ -72,5 +84,7 @@ public class Lessons : MonoBehaviour
         _coinsManager.Dispose();
         _spikesManager.Dispose();
         _finishManager.Dispose();
+        _protectorAI.Deinit();
+        _protectedZone.Deinit();
     }
 }

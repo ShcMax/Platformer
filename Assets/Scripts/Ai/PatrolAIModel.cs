@@ -5,7 +5,7 @@ public class PatrolAIModel
     private readonly Transform[] _waypoints;
     private int _currentPointIndex;
 
-    private PatrolAIModel(Transform [] waypoints)
+    public PatrolAIModel(Transform [] waypoints)
     {
         _waypoints = waypoints;
         _currentPointIndex = 0;
@@ -20,7 +20,7 @@ public class PatrolAIModel
         return _waypoints[_currentPointIndex];
     }
 
-    public Transform GetLosesTarget(Vector2 fromPosition)
+    public Transform GetClosestTarget(Vector2 fromPosition)
     {
         if (_waypoints == null)
             return null;
