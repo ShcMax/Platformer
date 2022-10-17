@@ -15,6 +15,10 @@ public class Lessons : MonoBehaviour
     [SerializeField] private List<FinishView> _finishViews;
 
     [SerializeField] private ElevatorView _elevatorView;
+    [SerializeField] private SliderJoint2D _sliderJoint;
+
+    [SerializeField] private AIConfig _config;
+    [SerializeField] private EnemyView _enemyView;
 
     private ParalaxManager _paralaxManager;
     private SpriteAnimator _spriteAnimator;
@@ -26,6 +30,8 @@ public class Lessons : MonoBehaviour
     private SpikesManager _spikesManager;
     private FinishManager _finishManager;
     private Elevator _elevator;
+
+    private SimplePatrolAI _simplePatrolAI;
     
 
     void Start()
@@ -40,7 +46,9 @@ public class Lessons : MonoBehaviour
         _coinsManager = new CoinsManager(_coinViews);
         _spikesManager = new SpikesManager(_spikeViews);
         _finishManager = new FinishManager(_finishViews);
-        _elevator = new Elevator(_elevatorView);
+        _elevator = new Elevator(_elevatorView, _sliderJoint);
+
+        _simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
     }
 
     void Update()
@@ -56,6 +64,7 @@ public class Lessons : MonoBehaviour
     {
         _mainHeroPhysicsWalker.FixedUpdate();
         _elevator.FixedUpdate();
+        _simplePatrolAI.FixedUpdate();
     }
 
     private void OnDestroy()
