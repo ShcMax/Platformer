@@ -27,6 +27,5 @@ public class SimplePatrolAIModel
     {
         _currentPointIndex = (_currentPointIndex + 1) % _config.Waypoints.Length;
         return _config.Waypoints[_currentPointIndex];
-    }
- 
+    }    
 }

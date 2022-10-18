@@ -38,7 +38,7 @@ public class Lessons : MonoBehaviour
     [SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
     [SerializeField] private AIPatrolPath _protectorAIPatrolPath;
     [SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
-    [SerializeField] private Transform[] _protectorWaypoints;
+    [SerializeField] private Transform[] _protectorWaypoints;   
 
 
     void Start()
@@ -54,6 +54,7 @@ public class Lessons : MonoBehaviour
         _spikesManager = new SpikesManager(_spikeViews);
         _finishManager = new FinishManager(_finishViews);
         _elevator = new Elevator(_elevatorView, _sliderJoint);
+
         //_simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
 
         _protectorAI = new ProtectorAI(_characterView, new PatrolAIModel(_protectorWaypoints), _protectorAIDestinationSetter, _protectorAIPatrolPath);
@@ -61,6 +62,8 @@ public class Lessons : MonoBehaviour
 
         _protectedZone = new ProtectedZone(_protectedZoneTrigger, new List<IProtector> { _protectorAI });
         _protectedZone.Init();
+
+
     }
 
     void Update()
