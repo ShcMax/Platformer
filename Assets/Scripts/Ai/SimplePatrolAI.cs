@@ -14,5 +14,5 @@ public class SimplePatrolAI
     public void FixedUpdate()
     {
         _view.Rigidbody.velocity = _model.CalculateVelocity(_view.transform.position);
-    }
+    }    
 }

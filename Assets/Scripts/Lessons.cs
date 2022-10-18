@@ -18,7 +18,7 @@ public class Lessons : MonoBehaviour
     [SerializeField] private SliderJoint2D _sliderJoint;
 
     [SerializeField] private AIConfig _config;
-    [SerializeField] private EnemyView _enemyView;
+    [SerializeField] private EnemyView _enemyView;        
 
     private ParalaxManager _paralaxManager;
     private SpriteAnimator _spriteAnimator;
@@ -30,9 +30,12 @@ public class Lessons : MonoBehaviour
     private SpikesManager _spikesManager;
     private FinishManager _finishManager;
     private Elevator _elevator;
-    //private SimplePatrolAI _simplePatrolAI;
+    private SimplePatrolAI _simplePatrolAI;
+
     private ProtectorAI _protectorAI;
     private ProtectedZone _protectedZone;
+
+    private ProtectorAI _protectorPatrolAI;
 
     [Header("Protector AI")]
     [SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
@@ -40,6 +43,14 @@ public class Lessons : MonoBehaviour
     [SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
     [SerializeField] private Transform[] _protectorWaypoints;   
 
+    [Header("Patrol AI")]
+    [SerializeField] private EnemyView _enemyPatrolView;
+
+    [Header("New Patrol AI")]    
+    [SerializeField] private LevelObjectTrigger _patrolZoneTrigger;
+    [SerializeField] private AIPatrolPath _patrolAIPath;
+    [SerializeField] private Transform[] _patrolWaypoints;
+    [SerializeField] private AIDestinationSetter _patrolAIDestinationSetter;
 
     void Start()
     {
@@ -55,7 +66,7 @@ public class Lessons : MonoBehaviour
         _finishManager = new FinishManager(_finishViews);
         _elevator = new Elevator(_elevatorView, _sliderJoint);
 
-        //_simplePatrolAI = new SimplePatrolAI(_enemyView, new SimplePatrolAIModel(_config));
+        _simplePatrolAI = new SimplePatrolAI(_enemyPatrolView, new SimplePatrolAIModel(_config));
 
         _protectorAI = new ProtectorAI(_characterView, new PatrolAIModel(_protectorWaypoints), _protectorAIDestinationSetter, _protectorAIPatrolPath);
         _protectorAI.Init();
@@ -63,7 +74,11 @@ public class Lessons : MonoBehaviour
         _protectedZone = new ProtectedZone(_protectedZoneTrigger, new List<IProtector> { _protectorAI });
         _protectedZone.Init();
 
+        _protectorPatrolAI = new ProtectorAI(_characterView, new PatrolAIModel(_patrolWaypoints), _patrolAIDestinationSetter, _patrolAIPath);
+        _protectorPatrolAI.Init();
 
+        _protectedZone = new ProtectedZone(_patrolZoneTrigger, new List<IProtector> { _protectorPatrolAI });
+        _protectedZone.Init();
     }
 
     void Update()
@@ -79,7 +94,7 @@ public class Lessons : MonoBehaviour
     {
         _mainHeroPhysicsWalker.FixedUpdate();
         _elevator.FixedUpdate();
-        //_simplePatrolAI.FixedUpdate();
+        _simplePatrolAI.FixedUpdate();
     }
 
     private void OnDestroy()
