@@ -70,13 +70,11 @@ public class Lessons : MonoBehaviour
 
         _protectorAI = new ProtectorAI(_characterView, new PatrolAIModel(_protectorWaypoints), _protectorAIDestinationSetter, _protectorAIPatrolPath);
         _protectorAI.Init();
-
         _protectedZone = new ProtectedZone(_protectedZoneTrigger, new List<IProtector> { _protectorAI });
         _protectedZone.Init();
 
         _protectorPatrolAI = new ProtectorAI(_characterView, new PatrolAIModel(_patrolWaypoints), _patrolAIDestinationSetter, _patrolAIPath);
         _protectorPatrolAI.Init();
-
         _protectedZone = new ProtectedZone(_patrolZoneTrigger, new List<IProtector> { _protectorPatrolAI });
         _protectedZone.Init();
     }
