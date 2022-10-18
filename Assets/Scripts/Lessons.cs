@@ -49,8 +49,8 @@ public class Lessons : MonoBehaviour
     [Header("New Patrol AI")]    
     [SerializeField] private LevelObjectTrigger _patrolZoneTrigger;
     [SerializeField] private AIPatrolPath _patrolAIPath;
-    [SerializeField] private Transform[] _patrolWaypoints;
     [SerializeField] private AIDestinationSetter _patrolAIDestinationSetter;
+    [SerializeField] private Transform[] _patrolWaypoints;    
 
     void Start()
     {
