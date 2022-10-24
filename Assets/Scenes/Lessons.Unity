@@ -997,6 +997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distanceJoint: {fileID: 440240011}
   _hingeJoint: {fileID: 863769110}
+  _collider: {fileID: 1367144488}
   _text: {fileID: 233154463}
 --- !u!61 &230668019
 BoxCollider2D:
@@ -1242,7 +1243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503872547848804233, guid: 306f8c2e36579b340a8bc61b1fbe59e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.595
+      value: -3.743
       objectReference: {fileID: 0}
     - target: {fileID: 7503872547848804233, guid: 306f8c2e36579b340a8bc61b1fbe59e9, type: 3}
       propertyPath: m_LocalPosition.y

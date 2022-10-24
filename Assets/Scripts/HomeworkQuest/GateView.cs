@@ -15,7 +15,7 @@ public class GateView : MonoBehaviour
 
     private void Awake()
     {
-        _hingeJoint.gameObject.SetActive(false);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
