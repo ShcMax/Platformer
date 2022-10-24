@@ -7,8 +7,8 @@ public class ElevatorView: MonoBehaviour
     [SerializeField]
     private SliderJoint2D _sliderJoint;
     
-    private float _startPosition = -1.5f;
-    private float _endPosition = 1.2f;
+    private float _startPosition = -1.8f;
+    private float _endPosition = 1.8f;
 
     private float _speedMotor = 0.5f; 
     
