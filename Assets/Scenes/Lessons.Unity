@@ -975,14 +975,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230668014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.2051725, y: 2.2293165, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.28835246, w: 0.9575244}
+  m_LocalPosition: {x: -5.266095, y: 2.3489723, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 863769113}
   m_Father: {fileID: 0}
   m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -33.519}
 --- !u!114 &230668018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3003,7 +3003,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.03617239, y: -0.00031638145}
+  m_ConnectedAnchor: {x: 0.036172464, y: -0.00031622685}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 100
@@ -3011,7 +3011,7 @@ HingeJoint2D:
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 395
-    m_UpperAngle: 480
+    m_UpperAngle: 457.45456
 --- !u!50 &863769111
 Rigidbody2D:
   serializedVersion: 4
